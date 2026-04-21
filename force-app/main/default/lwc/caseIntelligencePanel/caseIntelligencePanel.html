@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="Case Intelligence">
+        <div class="panel">
+            <!-- Case Header -->
+            <div class="section">
+                <div class="title">{caseSubject}</div>
+                <div class="sub">Status: {caseStatus}</div>
+            </div>
+
+            <!-- Piority + SLA-->
+            <div class="section grid">
+                <div>
+                    <lightning-badge label={priorityScoreLabel}></lightning-badge>
+                </div>
+                <div>
+                    <c-sla-countdown deadline={caseSLADeadline}></c-sla-countdown>
+                </div>
+            </div>
+
+            <!-- Summary -->
+             <div class="section">
+                <p class="label">Case Summary</p>
+                <p>{caseSummary}</p>
+             </div>
+
+             <!-- Account + Contact -->
+              <div class="section grid">
+                  <div>
+                      <p class="label">Account</p>
+                      <p>{caseAccount}</p>
+                      <p class="sub">{caseAccountType}</p>
+                  </div>
+                  <div>
+                      <p class="label">Contact</p>
+                      <p>{caseContact}</p>
+                      <p class="sub">{caseContactTitle}</p>
+                  </div>
+              </div>
+        </div>
+    </lightning-card>
+</template>

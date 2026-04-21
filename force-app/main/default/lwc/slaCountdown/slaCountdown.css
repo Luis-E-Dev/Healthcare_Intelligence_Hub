@@ -1,0 +1,27 @@
+.sla {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.sla.ok {
+    background: #e6f4ea;
+    color: #1b5e20;
+}
+.sla.warn {
+    background: #fff8e1;
+    color: #a06400;
+}
+.sla.breach {
+    background: #fdecea;
+    color: #b71c1c;
+}
+.label {
+    font-weight: 600;
+}
+.time {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.status {
+    font-size: 0.85rem;
+}

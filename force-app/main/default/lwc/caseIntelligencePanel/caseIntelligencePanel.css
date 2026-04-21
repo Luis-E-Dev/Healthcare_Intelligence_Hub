@@ -1,0 +1,22 @@
+.panel {
+    padding: 0.5rem 0.25rem;
+}
+.section {
+    margin-bottom: 0.75rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+.label {
+    font-weight: 600;
+}
+.sub {
+    color: #6b6d70;
+    font-size: 0.85rem;
+}
